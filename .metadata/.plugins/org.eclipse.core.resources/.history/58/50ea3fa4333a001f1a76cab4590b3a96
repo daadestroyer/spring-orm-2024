@@ -1,0 +1,5 @@
+package com.thecoderstv.springorm.entity;
+
+public class Student {
+
+}

@@ -1,0 +1,22 @@
+package com.thecoderstv.springorm;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.thecoderstv.springorm.entity.Student;
+import com.thecoderstv.springorm.service.StudentService;
+
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+		StudentService studentService = context.getBean("studentService",StudentService.class);
+		
+		Student student = new Student();
+		student.setId(101);
+		student.setName("Shubham Nigam");
+		student.setCity("Kanpur");
+		
+		int saveData = studentService.saveData(student);
+		System.out.println("data saved...");
+	}
+}

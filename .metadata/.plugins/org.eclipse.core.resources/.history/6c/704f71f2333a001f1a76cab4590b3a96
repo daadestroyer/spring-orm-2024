@@ -1,0 +1,13 @@
+package com.thecoderstv.springorm.service;
+
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.thecoderstv.springorm.entity.Student;
+
+public class StudentService {
+	
+	private HibernateTemplate hibernateTemplate;
+	public int saveData(Student student) {
+		
+	}
+}

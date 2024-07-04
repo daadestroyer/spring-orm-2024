@@ -1,0 +1,24 @@
+package com.thecoderstv.springorm.service;
+
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import com.thecoderstv.springorm.entity.Student;
+
+public class StudentService {
+
+	private HibernateTemplate hibernateTemplate;
+
+	public int saveData(Student student) {
+		int res = (Integer) this.hibernateTemplate.save(student);
+		return res;
+	}
+	
+	public void deleteData(Student student) {
+		this.hibernateTemplate.delete(student);
+	}
+	
+	public void getData(int id) {
+		Student student = this.hibernateTemplate.get(Student.class, id);
+		return student;
+	}
+}

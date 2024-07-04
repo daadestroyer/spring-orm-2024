@@ -1,0 +1,17 @@
+<dependencies>
+    <!-- Spring Framework dependencies -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>5.3.26</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>5.3.26</version>
+    </dependency>
+
+    <!-- Hibernate dependencies -->
+    <dependency>
+        <groupId>org.hibernate.orm</groupId>
+        <artifactId>hibernate-core</artifact​⬤
